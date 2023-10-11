@@ -1,0 +1,50 @@
+** javascript notes **
+
+** difference between stack and heap
+
+!stack
+it store all the primitives value like string number boolean null undefined Symbol NaN
+
+!Heap
+it store all not primitive value like object{} array[] and functions
+
+
+!Note
+when we assign primitive value to a variable and we try to assign to another value that time 
+original value does not change it's make a new copy of that variable and assign that
+
+!example
+
+let name = "juber";
+let userName = name;
+
+if we console the value then it will print
+console.log(name , userName)  
+!output will be
+juber , juber
+
+if we try to change the username then name value will not change it remain same
+!example  
+userName = "juber khan";
+
+if we console the value then the out will be 
+
+!output
+userName will be "juber khan"
+and name will be remian same like juber;
+
+
+
+! Note 
+when we assign not primitive values (reference) to a variables then all the value is created ih the heap
+memory and the we we try to reassign the value then original value is copied  
+!example
+
+let user = {name : "juber" , age : 23}
+let userTwo = user;
+if we console the value then the out put will be name : juber ; age : 23
+
+! note
+
+when we try to update the user name then userTwo name will be also changed because we are assign the value by refrence 
+in heap all the value is store by the reference

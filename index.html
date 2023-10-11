@@ -5,10 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-     <input type="text" id="searchInput" placeholder="search">
-     <div class="container"></div>
 
-    <script src="script.js"></script>
+  <style>
+    html , body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .container{
+        width: 200px;
+        height: 40px;
+        background: red;
+        position: relative;
+        /* overflow: hidden; */
+    }
+    
+    h1:nth-child(1){
+         /* top: 0; */
+         transform: translateY(-100%);
+    }
+    
+    h1{
+        position: absolute;
+        top: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        transition: all 0.9s ease-in;
+    }
+
+
+  </style>
+<body>
+     <!-- <input type="text" id="searchInput" placeholder="search"> -->
+     <div class="main">
+         <div class="container">
+             <h1>Hello</h1>
+             <h1>Juber</h1>
+             <h1>From</h1>
+             <h1>New Delhi</h1>
+         </div>
+    </div>
+            
+    <script src="animation.js"></script>
 </body>
 </html>
