@@ -68,3 +68,22 @@ console.log(str.substring(1));  // uber-khan
 In javascript Hoisting is a javascript behavior , where variables and functions decalarations are moved to the top 
 of their containign scop  during the compilation phase  before the code is excuted  which means
 u can use functions and variables before they are decleared 
+
+
+!slice and splice Arrays Methods
+
+slice =>  slice return a copy of array and it does not include last value elements
+splice => spilce modifies in original array and it also not include last value
+
+str = "juberkhan"
+
+const newStr = str.slice(0 , 4); //  juber
+const newStr2 =  str.spilce(0 , 3) // jube
+
+Arrays.from("juber")  ['j' , 'b' , 'e' , 'r'] // convert the string into array
+Arrays.isArray("juber)  // false  // check if passed parameter is a array return true or false
+const a = 12;
+const b = 14;
+const c = 122;
+Arrays.of(a, b, c); // convert the variables into array
+
