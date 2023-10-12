@@ -48,3 +48,23 @@ if we console the value then the out put will be name : juber ; age : 23
 
 when we try to update the user name then userTwo name will be also changed because we are assign the value by refrence 
 in heap all the value is store by the reference
+
+
+
+
+! substring 
+var str = "juber-khan"
+substring does not contains last value index
+example str.substring(0, 4);  jube
+example str.substring(1, 5);  uber
+var str = "juber-khan";
+console.log(str.substring(0,4));  // jube
+console.log(str.substring(1,5));  // uber
+console.log(str.substring(1));  // uber-khan
+
+
+! Hoisting
+
+In javascript Hoisting is a javascript behavior , where variables and functions decalarations are moved to the top 
+of their containign scop  during the compilation phase  before the code is excuted  which means
+u can use functions and variables before they are decleared 
