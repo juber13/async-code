@@ -54,7 +54,18 @@
 // //   users();
 
 
-var str = "juber-khan";
-console.log(str.substring(0,4));  // jube
-console.log(str.substring(1,5));  // uber
-console.log(str.substring(1));  // uber-khan
+// var str = "juber-khan";
+// console.log(str.substring(0,4));  // jube
+// console.log(str.substring(1,5));  // uber
+// console.log(str.substring(1));  // uber-khan
+
+
+const obj = {
+    name : "juber", 
+    age : 23,
+    role : "Developer"
+}
+
+
+const newObj = Object.entries(obj);
+console.log(newObj);

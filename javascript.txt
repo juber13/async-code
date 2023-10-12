@@ -87,3 +87,38 @@ const b = 14;
 const c = 122;
 Arrays.of(a, b, c); // convert the variables into array
 
+
+
+!Object 
+// 
+Object.create(); // it create singleton
+const symbol = Symbol('key');
+const obj = {
+    name : "juber",
+    age : 23,
+    role : "developer"
+    [symbol] : "goodmorning",
+    'full name' : "juber khan"
+}
+
+
+Object.freez(obj) // we can to modify object freezing
+
+obj.greeting =  function(){
+    console.log("welcome to my dashboard");
+}
+
+this reference to the object which is defined inside that
+
+
+Object.keys(obj)  // return all the key of object in the form of Arrays
+Object.values(obj) // return all the values of object in the form of array
+Object.entries(obj) // return the array of array like [[name: "juber"] [age : "23"] [role : "developer"]]
+
+obj.hasOwnProperty('isLogged') // check if object contains this property  if yes then return true else false
+
+
+
+
+
+
